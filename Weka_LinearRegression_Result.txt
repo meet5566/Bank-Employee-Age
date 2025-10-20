@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     Bank_dataset
+Instances:    150
+Attributes:   15
+              EmployeeID
+              Name
+              Gender
+              Age
+              JobRole
+              Department
+              Salary
+              Experience
+              Education
+              MaritalStatus
+              JoiningYear
+              PerformanceScore
+              City
+              Overtime
+              PromotionCount
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+PromotionCount =
+
+      0.4305 * Name=Jyoti,Mohan,Pooja,Komal,Rohit,Swati,Kiran,Deepa,Preeti,Nikhil,Anil,Gaurav,Manoj,Priya,Isha,Vikram,Ashok,Rajesh,Neha,Suresh,Rekha,Sunita +
+      0.3899 * Name=Kiran,Deepa,Preeti,Nikhil,Anil,Gaurav,Manoj,Priya,Isha,Vikram,Ashok,Rajesh,Neha,Suresh,Rekha,Sunita +
+     -0.3355 * Name=Deepa,Preeti,Nikhil,Anil,Gaurav,Manoj,Priya,Isha,Vikram,Ashok,Rajesh,Neha,Suresh,Rekha,Sunita +
+      0.4209 * Name=Anil,Gaurav,Manoj,Priya,Isha,Vikram,Ashok,Rajesh,Neha,Suresh,Rekha,Sunita +
+     -0.3534 * Name=Gaurav,Manoj,Priya,Isha,Vikram,Ashok,Rajesh,Neha,Suresh,Rekha,Sunita +
+      0.4546 * Name=Isha,Vikram,Ashok,Rajesh,Neha,Suresh,Rekha,Sunita +
+      0.0899 * Age +
+      0.2967 * JobRole=Manager,Branch Head +
+     -2.8308
+
+Time taken to build model: 0.16 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.5084
+Mean absolute error                      0.6768
+Root mean squared error                  0.8573
+Relative absolute error                 85.1525 %
+Root relative squared error             89.5527 %
+Total Number of Instances              150     
+
